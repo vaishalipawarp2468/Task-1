@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Vaishali Pawar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+header h1 {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+header p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+/* NAVBAR */
+nav {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: yellow;
+}
+
+/* MAIN */
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 10px;
+}
+
+/* SECTIONS */
+section {
+    background: rgba(255,255,255,0.9);
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: 0.3s;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* TITLES */
+section h2 {
+    margin-bottom: 12px;
+    color: #5a67d8;
+    font-size: 22px;
+}
+
+/* SKILLS */
+.skills span {
+    display: inline-block;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: white;
+    padding: 8px 14px;
+    margin: 6px;
+    border-radius: 20px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.skills span:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECT CARDS */
+article {
+    background: #f8f9ff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+article:hover {
+    background: #e8ecff;
+    transform: scale(1.02);
+}
+
+article h3 {
+    color: #333;
+}
+
+/* CONTACT BUTTON */
+.contact button {
+    padding: 12px 30px;
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.contact button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    color: white;
+    font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    nav ul{
+        flex-direction: column;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Vaishali Pawar</h1>
+    <p>Web Developer | Frontend Learner</p>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<main>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a passionate web developer learning HTML, CSS, and JavaScript.
+        I love building modern websites and improving my skills through projects.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <span>HTML5</span>
+        <span>CSS3</span>
+        <span>JavaScript</span>
+        <span>Responsive Design</span>
+        <span>Git Basics</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <article>
+        <h3>🚦 Traffic Signal Simulation</h3>
+        <p>A JavaScript-based project that simulates traffic signal behavior.</p>
+    </article>
+
+    <article>
+        <h3>🛒 Product Page UI</h3>
+        <p>A responsive product page with Buy Now functionality.</p>
+    </article>
+
+    <article>
+        <h3>🌐 Portfolio Website</h3>
+        <p>This modern portfolio built using HTML, CSS, and JavaScript.</p>
+    </article>
+
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>📧 Email: vaishalipawarp48@example.com</p>
+    <p>📱 Phone: +91 7899471739</p>
+    <br>
+    <button onclick="sayHello()">Say Hello</button>
+</section>
+
+</main>
+<script>
+function sayHello() {
+    alert("Hello 👋 Thank you for visiting my portfolio!");
+}
+</script>
+
+</body>
+</html>
